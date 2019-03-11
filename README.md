@@ -3,9 +3,16 @@
 
 ## Docs
 
-
-Preview
+Install sphinx and theme
 
 ```
-docsify serve docs
+pip install sphinx sphinx_rtd_theme
 ```
+
+Build
+
+```
+cd docs; make html
+```
+
+Docs will be generated under `/docs/_build/` directory.
