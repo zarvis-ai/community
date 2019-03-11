@@ -12,7 +12,7 @@ spec:
 kind: Service
 apiVersion: v1
 metadata:
-  name: zarvis-docs-service
+  name: docs
 spec:
   ports:
   - name: http
