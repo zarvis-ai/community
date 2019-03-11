@@ -1,0 +1,21 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: zarvis-docs
+  labels:
+    app: zarvis-docs-app
+spec:
+  containers:
+  - name: zarvis-docs
+    image: gcr.io/zarvis-crs/zarvis-ai/community
+---
+kind: Service
+apiVersion: v1
+metadata:
+  name: zarvis-docs-service
+spec:
+  ports:
+  - name: http
+    port: 8000
+  selector:
+    app: zarvis-docs-app

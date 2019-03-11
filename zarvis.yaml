@@ -1,0 +1,8 @@
+apiVersion: beta/v1
+deploy:
+  skaffold:
+auth:
+  type: ANON
+ingress:
+  - serviceName: public
+    port: 8000
