@@ -1,10 +1,8 @@
-apiVersion: skaffold/v1beta1
+apiVersion: skaffold/v1beta7
 kind: Config
 build:
   artifacts:
-  - image: gcr.io/zarvis-crs/zarvis-ai/community
-  googleCloudBuild:
-    projectId: zarvis-crs
+  - image: gcr.zarvis.ai/zarvis-ai/community
 deploy:
   kubectl:
     manifests:

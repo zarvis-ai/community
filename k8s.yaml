@@ -7,7 +7,7 @@ metadata:
 spec:
   containers:
   - name: zarvis-docs
-    image: gcr.io/zarvis-crs/zarvis-ai/community
+    image: gcr.zarvis.ai/zarvis-ai/community
 ---
 kind: Service
 apiVersion: v1
