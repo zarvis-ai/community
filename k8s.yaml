@@ -1,18 +1,27 @@
-apiVersion: v1
-kind: Pod
+apiVersion: extensions/v1beta1
+kind: Deployment
 metadata:
-  name: zarvis-docs
+  name: zarvis-docs-deployment
   labels:
     app: zarvis-docs-app
 spec:
-  containers:
-  - name: zarvis-docs
-    image: gcr.zarvis.ai/zarvis-ai/community
+  selector:
+    matchLabels:
+      app: zarvis-docs-app
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: zarvis-docs-app
+    spec:
+      containers:
+      - name: zarvis-docs
+        image: gcr.zarvis.ai/zarvis-ai/community
 ---
 kind: Service
 apiVersion: v1
 metadata:
-  name: docs
+  name: zarvis-docs-service
 spec:
   ports:
   - name: http
