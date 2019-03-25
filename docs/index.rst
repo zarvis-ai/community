@@ -5,7 +5,6 @@ Z.A.R.V.I.S.
    :maxdepth: 2
 
    usage/zarvis_yaml
-   example/zarvis_yaml_example
-
-
-.. _Service: https://kubernetes.io/docs/concepts/services-networking/service/
+   usage/zarvis_yaml_example
+   usage/quotas
+   usage/faq

@@ -15,6 +15,7 @@ Overview
       docker:                    # Build dockerfile and deploy.
         file: Dockerfile         # locates the Dockerfile relative to workspace. Defaults to 'Dockerfile'.
         service: docker          # Name of the Service to create, so ingress can connect. Defaults to 'docker'.
+        port: 8000               # Port number to configure in the Service. Defaults to '8000'.
       skaffold:                  # Run skaffold to deploy project.
         file: skaffold.yaml      # locates the skaffold.yaml relative to workspace. Defaults to 'skaffold.yaml'.
         profile:                 # Name of a profile to use.
