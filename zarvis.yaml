@@ -1,6 +1,6 @@
 apiVersion: beta/v1
 deploy:
-  skaffold:
+  skaffold: {}
 auth:
   type: ANON
 ingress:
