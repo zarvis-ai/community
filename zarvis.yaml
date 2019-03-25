@@ -4,5 +4,5 @@ deploy:
 auth:
   type: ANON
 ingress:
-  - serviceName: docs
+  - serviceName: zarvis-docs-service
     port: 8000
