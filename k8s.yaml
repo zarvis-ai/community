@@ -17,6 +17,7 @@ spec:
       containers:
       - name: zarvis-docs
         image: gcr.zarvis.ai/zarvis-ai/community
+        imagePullPolicy: Always
         ports:
         - name: http
           containerPort: 8000
