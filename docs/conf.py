@@ -20,7 +20,7 @@
 # -- Project information -----------------------------------------------------
 
 project = u'ZARVIS'
-copyright = u'2019, Zarvis'
+copyright = u'Zarvis, Inc.'
 author = u'Zarvis'
 
 # The short X.Y version
