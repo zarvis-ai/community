@@ -1,5 +1,14 @@
 # Z.A.R.V.I.S. community
 
+Fee free to create [issues](https://github.com/zarvis-ai/community/issues) for 
+
+ - 🤔 Questions
+ - 🐞 Bug report
+ - ✨Feature requests
+
+We appreciate any feedbacks!
+
+If you have security issue, please report to security@zarvis.ai. We'll take them seriously.
 
 ## Docs
 
