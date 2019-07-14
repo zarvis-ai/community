@@ -15,6 +15,4 @@ zarvis.yaml
     ingress:
     - service: echo
       port: 8000
-    auth:
-      type: ANON
 
