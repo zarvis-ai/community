@@ -1,8 +1,6 @@
 apiVersion: beta/v1
 deploy:
   skaffold: {}
-auth:
-  type: ANON
 ingress:
   - serviceName: docs
     port: 8000

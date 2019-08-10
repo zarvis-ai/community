@@ -5,6 +5,6 @@ Z.A.R.V.I.S.
    :maxdepth: 2
 
    usage/zarvis_yaml
-   usage/zarvis_yaml_example
+   usage/examples
    usage/quotas
    usage/faq

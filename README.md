@@ -12,6 +12,16 @@ If you have security issue, please report to security@zarvis.ai. We'll take them
 
 ## Docs
 
+### Run locally with Skaffold
+
+```
+skaffold dev --port-forward
+```
+
+and browse `localhost:8000`
+
+### Build manually
+
 Install sphinx and theme
 
 ```
