@@ -27,4 +27,4 @@ zarvis-community_                        Sphinx |sphinx-logo| Skaffold_ |k8s-log
    :alt: Sphinx doc
    :target: https://www.sphinx-doc.org
 
-.. _Skaffold: https://skaffold.dev/
+.. include:: ../ref.rst
