@@ -4,7 +4,7 @@ zarvis.yaml
 
 Place `zarvis.yaml`_ file in your Github project repository root.
 This file tells how to build, deploy and serve the project.
-If `zarvis.yaml`_ is not exists, project will be built with `buildpacks`_.
+If `zarvis.yaml`_ does not exists, project will be built with `buildpacks`_.
 
 Overview
 --------
