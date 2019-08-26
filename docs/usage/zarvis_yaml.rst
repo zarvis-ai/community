@@ -4,7 +4,7 @@ zarvis.yaml
 
 Place `zarvis.yaml`_ file in your Github project repository root.
 This file tells how to build, deploy and serve the project.
-If `zarvis.yaml`_ does not exists, project will be built with `buildpacks`_.
+If `zarvis.yaml`_ does not exist, project will be built with `buildpacks`_.
 
 Overview
 --------
@@ -31,6 +31,8 @@ Overview
 deploy
 ------
     Precisely one of 'buildpack', 'dockerfile', 'skaffold' must be set.
+
+    Currently 'kubectl' is supported when using 'skaffold'. 'helm' and 'kustomize' support are coming soon.
 
 ingress
 -------
