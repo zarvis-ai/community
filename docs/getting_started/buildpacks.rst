@@ -8,8 +8,8 @@ Zarvis automatically build project using Buildpacks_.
 1. Connect your Github project.
 2. Select branch and deploy in 'Deploy' tab.
 3. Zarvis automatically build and deploy to staging.
-4. Promote to production and get production url.
-5. Configure access control in 'Setting' tab.
+4. Optionally, promote to production and get production url.
+5. Optionally, configure access control in 'Setting' tab.
 
 Default builder is `cloudfoundry/cnb:cflinuxfs3`. This builder includes Buildpacks:
 
