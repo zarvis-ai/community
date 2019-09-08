@@ -5,11 +5,11 @@ Getting started with Buildpacks
 When your project does not have skaffold.yaml_ or Dockerfile_,
 Zarvis automatically build project using Buildpacks_. 
 
-1. Connect your Github project.
-2. Select branch and deploy in 'Deploy' tab.
-3. Zarvis automatically build and deploy to staging.
-4. Optionally, promote to production and get production url.
-5. Optionally, configure access control in 'Setting' tab.
+#. Connect your Github project.
+#. Select branch and deploy in 'Deploy' tab.
+#. Zarvis automatically build and deploy to staging.
+#. Optionally, promote to production and get production url.
+#. Optionally, configure access control in 'Setting' tab.
 
 Default builder is `cloudfoundry/cnb:cflinuxfs3`. This builder includes Buildpacks:
 
