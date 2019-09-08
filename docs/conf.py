@@ -98,6 +98,21 @@ html_static_path = ['_static']
 #
 # html_sidebars = {}
 
+# Enable link of 'View page source'
+#html_show_sourcelink = False
+# Add 'Edit on Github' link instead of 'View page source'
+# reference:https://docs.readthedocs.io/en/latest/vcs.html
+html_context = {
+    # Enable the "Edit in GitHub link within the header of each page.
+    'display_github': True,
+    # Set the following variables to generate the resulting github URL for each page. 
+    # Format Template: https://{{ github_host|default("github.com") }}/{{ github_user }}
+    #/{{ github_repo }}/blob/{{ github_version }}{{ conf_py_path }}{{ pagename }}{{ suffix }}
+    #https://github.com/runawayhorse001/SphinxGithub/blob/master/doc/index.rst
+    'github_user': 'zarvis-ai',
+    'github_repo': 'community',
+    'github_version': 'master/docs/',
+}
 
 # -- Options for HTMLHelp output ---------------------------------------------
 
