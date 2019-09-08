@@ -1,13 +1,9 @@
-============
-zarvis.yaml
-============
+=====================
+zarvis.yaml Overview
+=====================
 
-Place `zarvis.yaml`_ file in your Github project repository root.
-This file tells how to build, deploy and serve the project.
-If `zarvis.yaml`_ does not exist, project will be built with `Buildpacks`_.
-
-Overview
---------
+Zarvis read `zarvis.yaml` file in the repository root if exists.
+The file can have more detailed configuration of build, deploy.
 
 .. code-block:: yaml
 
@@ -28,6 +24,7 @@ Overview
     - service:                            # Name of a Service to connect.
       port:                               # Port number of the service.
 
+
 deploy
 ------
     Precisely one of 'buildpack', 'dockerfile', 'skaffold' must be set.
@@ -37,53 +34,5 @@ deploy
 ingress
 -------
     Ingress creates https endpoint and connect your Service_.
-
-zarvis.yaml examples
---------------------
-
-Skaffold
-========
-
-Use 'skaffold.yaml' in the project root with default profile.
-
-.. code-block:: yaml
-
-    apiVersion: beta/v1
-    deploy:
-      skaffold: {}            # make sure empty object is assigned
-    ingress:
-      - serviceName: public   # name of a Kubernetes Service resource want to connect to public endpoint
-        port: 8080
-
-
-
-Skaffold with profile
-=====================
-
-Use 'skaffold.yaml' in the project root with profile 'production'.
-
-.. code-block:: yaml
-
-    apiVersion: beta/v1
-    deploy:
-      skaffold:
-        profile: production
-    ingress:
-      - serviceName: public
-        port: 8080
-
-Dockerfile
-==========
-
-Use 'Dockerfile' in the project root.
-
-.. code-block:: yaml
-
-    apiVersion: beta/v1
-    deploy:
-      dockerfile: {}          # make sure empty object is assigned.
-
-
-For complete example, please see :doc:`examples`
 
 .. include:: ../ref.rst

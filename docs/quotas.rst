@@ -5,8 +5,8 @@ Quotas & limits
 Z.A.R.V.I.S. limits resource allocation and use, and enforces appropriate quotas on a per-project basis.
 Subject to change without notice.
 
-Deploy
-------
+Namespace quota
+---------------
 
 ===========================  ========================================== =====
 Resource                     Hacker                                     Pro
@@ -24,8 +24,8 @@ k8s Secrets                  10 / Branch                                TBD
 ===========================  ========================================== =====
 
 
-Build
------
+Build quota
+-----------
 
 ===================================  ======
 Resource                             Limit

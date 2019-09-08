@@ -14,29 +14,29 @@ zarvis-community_                        Sphinx |sphinx-logo|     Skaffold_ |k8s
 .. _zarvis-example-express: https://github.com/zarvis-ai/zarvis-example-express
 .. _zarvis-community: https://github.com/zarvis-ai/community
 
-.. |go-logo| image:: ../_static/go_logo.svg
+.. |go-logo| image:: ./_static/go_logo.svg
    :width: 35px
    :alt: Go
    :target: https://golang.org/
 
-.. |k8s-logo| image:: ../_static/kubernetes.png
+.. |k8s-logo| image:: ./_static/kubernetes.png
    :width: 20px
    :alt: Kubernetes
    :target: https://kubernetes.io/
 
-.. |sphinx-logo| image:: ../_static/sphinx_logo.png
+.. |sphinx-logo| image:: ./_static/sphinx_logo.png
    :width: 24px
    :alt: Sphinx doc
    :target: https://www.sphinx-doc.org
 
-.. |nodejs-logo| image:: ../_static/nodejs_logo.svg
+.. |nodejs-logo| image:: ./_static/nodejs_logo.svg
    :width: 50px
    :alt: NodeJs
    :target: https://nodejs.org
 
-.. |bp-logo| image:: ../_static/buildpacks_logo.png
+.. |bp-logo| image:: ./_static/buildpacks_logo.png
    :width: 20px
    :alt: Buildpacks
    :target: https://buildpacks.io
 
-.. include:: ../ref.rst
+.. include:: ./ref.rst
