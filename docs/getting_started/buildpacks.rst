@@ -3,11 +3,11 @@ Getting started with Buildpacks
 ===============================
 
 When your project does not have skaffold.yaml_ or Dockerfile_,
-Zarvis automatically build project using Buildpacks_. 
+Zarvis automatically builds the project using Buildpacks_. 
 
 #. Connect your Github project.
-#. Select branch and deploy in 'Deploy' tab.
-#. Zarvis automatically build and deploy to staging.
+#. Select a branch and deploy in the 'Deploy' tab.
+#. Zarvis automatically builds and deploys to staging.
 #. Optionally, promote to production and get production url.
 #. Optionally, configure access control in 'Setting' tab.
 

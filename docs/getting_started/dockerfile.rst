@@ -5,8 +5,8 @@ Getting started with Dockerfile
 Zarvis reads Dockerfile_ in the repository root.
 
 #. Connect your Github project.
-#. Select branch that includes Dockerfile_ and deploy in 'Deploy' tab.
-#. Zarvis build Dockerfile_ and deploy to staging.
+#. Select a branch that includes Dockerfile_ and deploy in the 'Deploy' tab.
+#. Zarvis builds Dockerfile_ and deploys to staging.
 #. Optionally, promote to production and get production url.
 #. Optionally, configure access control in 'Setting' tab.
 

@@ -6,7 +6,7 @@ zarvis.yaml Examples
 Skaffold
 ========
 
-Use 'skaffold.yaml' in the project root with default profile.
+Use 'skaffold.yaml' in the project root with the default profile.
 
 .. code-block:: yaml
 
@@ -14,7 +14,7 @@ Use 'skaffold.yaml' in the project root with default profile.
     deploy:
       skaffold: {}            # make sure empty object is assigned
     ingress:
-      - serviceName: public   # name of a Kubernetes Service resource want to connect to public endpoint
+      - serviceName: public   # name of a Kubernetes Service resource want to connect to the public endpoint
         port: 8080
 
 
@@ -46,6 +46,6 @@ Use 'Dockerfile' in the project root.
       dockerfile: {}          # make sure empty object is assigned.
 
 
-For complete example, please see :doc:`../examples`
+For a complete example, please see :doc:`../examples`
 
 .. include:: ../ref.rst
