@@ -8,7 +8,7 @@ spec:
   selector:
     matchLabels:
       app: zarvis-docs-app
-  replicas: 1
+  replicas: 2
   template:
     metadata:
       labels:
