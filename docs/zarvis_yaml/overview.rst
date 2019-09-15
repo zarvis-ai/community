@@ -10,7 +10,7 @@ The file can have more detailed configuration of build, deploy.
     apiVersion: beta/v1
     deploy:                               # (Required) Precisely one of 'buildpack', 'docker', 'skaffold' must be set.
       buildpack:                          # Build using buildpack. When zarvis.yaml is not exists, this is the default.
-        builder: cloudfoundry/cnb:bionic  # Builder image. Default to 'cloudfoundry/cnb:bionic'.
+        builder: heroku/buildpacks:18     # Builder image. Default to 'heroku/buildpacks:18'.
         service: buildpack-service        # Service name, so ingress can connect. Defaults to 'buildpack-service'
         port: 8080                        # Port number to configure in the Service. Defaults to '8080'.
       docker:                             # Build Dockerfile and deploy.

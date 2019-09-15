@@ -11,7 +11,20 @@ Zarvis automatically builds the project using Buildpacks_.
 #. Optionally, promote to production and get production url.
 #. Optionally, configure access control in 'Setting' tab.
 
-Default builder is `cloudfoundry/cnb:cflinuxfs3`. This builder includes Buildpacks:
+Default builder is `heroku/buildpacks:18`. This builder includes Buildpacks:
+
+.. code-block:: none
+
+    heroku/java
+    heroku/ruby
+    heroku/procfile
+    heroku/python
+    heroku/gradle
+    heroku/php
+    heroku/go
+    heroku/nodejs
+
+You can configure other builders in :ref:`zarvis.yaml`, such as `cloudfoundry/cnb:cflinuxfs3` that includes Buildpacks:
 
 .. code-block:: none
 
@@ -45,18 +58,5 @@ Default builder is `cloudfoundry/cnb:cflinuxfs3`. This builder includes Buildpac
     org.cloudfoundry.springautoreconfiguration
     org.cloudfoundry.springboot
     org.cloudfoundry.distzip
-
-You can configure other builders in :ref:`zarvis.yaml`, such as `heroku/buildpacks:18` that includes Buildpacks:
-
-.. code-block:: none
-
-    heroku/java
-    heroku/ruby
-    heroku/procfile
-    heroku/python
-    heroku/gradle
-    heroku/php
-    heroku/go
-    heroku/nodejs
 
 .. include:: ../ref.rst
