@@ -10,19 +10,19 @@ The file can have more detailed configuration of build, deploy.
     apiVersion: beta/v1
     deploy:                               # (Required) Precisely one of 'buildpack', 'docker', 'skaffold' must be set.
       buildpack:                          # Build using buildpack. When zarvis.yaml is not exists, this is the default.
-        builder: heroku/buildpacks:18     # Builder image. Default to 'heroku/buildpacks:18'.
-        service: buildpack-service        # Service name, so ingress can connect. Defaults to 'buildpack-service'
+        builder: heroku/buildpacks:18     # Builder image. Defaults to 'heroku/buildpacks:18'.
+        service: service                  # Service name, so ingress can connect. Defaults to 'service'
         port: 8080                        # Port number to configure in the Service. Defaults to '8080'.
       docker:                             # Build Dockerfile and deploy.
         file: Dockerfile                  # locates the Dockerfile relative to workspace. Defaults to 'Dockerfile'.
-        service: docker                   # Name of a Service to create, so ingress can connect. Defaults to 'docker'.
-        port: 8000                        # Port number to configure in the Service. Defaults to '8000'.
+        service: service                  # Name of a Service to create, so ingress can connect. Defaults to 'service'.
+        port: 8080                        # Port number to configure in the Service. Defaults to '8080'.
       skaffold:                           # Run skaffold to deploy the project.
         file: skaffold.yaml               # locates the skaffold.yaml relative to workspace. Defaults to 'skaffold.yaml'.
         profile:                          # Name of a profile to use.
     ingress:                              # Ingress configures https endpoints.
-    - service:                            # Name of a Service to connect.
-      port:                               # Port number of the service.
+    - service:                            # Name of a Service to connect. Defaults to 'service'
+      port:                               # Port number of the service. Defaults to '8080'
 
 
 deploy

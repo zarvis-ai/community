@@ -14,7 +14,7 @@ Use 'skaffold.yaml' in the project root with the default profile.
     deploy:
       skaffold: {}            # make sure empty object is assigned
     ingress:
-      - serviceName: public   # name of a Kubernetes Service resource want to connect to the public endpoint
+      - serviceName: my-service   # name of a Kubernetes Service resource want to connect to the public endpoint
         port: 8080
 
 
@@ -31,7 +31,7 @@ Use 'skaffold.yaml' in the project root with profile 'production'.
       skaffold:
         profile: production
     ingress:
-      - serviceName: public
+      - serviceName: my-service
         port: 8080
 
 Dockerfile
