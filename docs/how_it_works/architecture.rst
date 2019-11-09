@@ -43,3 +43,7 @@ Deploy process always creates a new namespace and does not change namespace of t
 Once the health of deploy is confirmed in the new namespace, Zarvis change traffic route to the new namespace
 and then remove old namespace.
 
+
+Shared cluster
+--------------
+

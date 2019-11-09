@@ -18,4 +18,4 @@ Today, Zarvis supports following Kubernetes resource types.
 - ConfigMap
 - Secret
 
-We're planning to support more resources types and custom resources, in the future.
+We're planning to support more resource types and custom resources, in the future.
